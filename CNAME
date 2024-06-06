@@ -1,0 +1,14 @@
+pottery-website/
+├── css/
+│   └── styles.css
+├── images/
+│   └── logo.png
+│   └── vase1.jpg
+│   └── vase2.jpg
+│   └── vase3.jpg
+├── js/
+│   └── scripts.js
+├── index.html
+├── shop.html
+├── story-vases.html
+└── about-me.html
