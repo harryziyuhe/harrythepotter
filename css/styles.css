@@ -1,0 +1,82 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #255b8a;
+    background-color: white; /* Change background color to white */
+}
+
+header {
+    background-color: #FAEBD7; /* Change header background color to Antique White */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px; /* Adjust the width accordingly if necessary */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu li a {
+    color: #255b8a; /* Change menu text color to #0E3A53 */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; /* Increased gap between items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.item-name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    padding: 0;
+    box-sizing: border-box;
+    color: #255b8a;
+    background-color: white; /* Change background color to white */
+    margin: 0;
+}
+
+header {
+    background-color: #FAEBD7; /* Change header background color to Antique White */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px; /* Adjust the width accordingly if necessary */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu li a {
+    color: #255b8a; /* Change menu text color to #0E3A53 */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Story Description */
+.story-vases-title {
+    text-align: center; /* Center the title horizontally */
+    font-size: 56px; /* Adjust font size as desired */
+    margin: 20px 0; /* Add some space above and below the title */
+    font-family: 'Monsieur La Doulaise'; /* Use a calligraphy font (Sacramento) */
+    color: #255b8a; /* Adjust text color if needed */
+}
+
+.story-description {
+    margin: 0;
+    padding: 0 calc(max(5% , 30px)); /* Center the description horizontally */
+    border-top: 5px solid #f0e6d9; /* Add a decorative top border */
+    border-bottom: 5px solid #f0e6d9; /* Add a decorative top border */
+}
+  
+.story-description p {
+    font-size: 18px; /* Adjust font size as desired */
+    line-height: 1.5; /* Adjust line-height for readability */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+    font-family: serif; /* Use a serif font for a more elegant feel */
+    padding-top: 20px; /* Add some space above the border */
+}
+  
+  /* Call to Action */
+.story-cta {
+    text-align: center; /* Center the call to action text and button */
+    margin-top: 40px; /* Add space after the description */
+}
+  
+.story-cta p {
+    margin-bottom: 10px; /* Add some space before the button */
+}
+  
+.story-cta a {
+    background-color: #333; /* Contrast color for the button */
+    color: #fff; /* White text for better visibility */
+    padding: 10px 20px; /* Add some padding to the button */
+    border: none; /* Remove border from the button */
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the button text bold */
+    transition: background-color 0.2s ease-in-out; /* Add hover effect */
+}
+  
+.story-cta a:hover {
+    background-color: #222; /* Change button color on hover */
+}
+
+.examples {
+    display: flex;
+    flex-wrap: wrap; /* Allow examples to wrap to next line if needed */
+}
+  
+.example {
+    display: flex; /* Make each example a flex container */
+    margin: 20px 0px;  /* Add some margin for spacing */
+    padding: calc(max(5% , 30px));
+    background-color: #fff8ef; /* Light gray background for each band */
+}
+  
+.example img {
+    width: 40%; /* Adjust image width as needed */
+}
+  
+.example:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse order for even examples */
+    justify-content: flex-end; /* Right-align content within the container */
+}
+  
+.example > * {  /* Target all direct children of .example */
+    margin: 0;  /* Margin for spacing between elements */
+}
+  
+.example > img {  /* Target the first child element (text for even) */
+    margin-left: 0;
+    margin-right: calc(max(10%, 40px));  /* Remove left margin for the first child */
+}
+  
+.example:nth-child(even) > img {  /* Target the last child (image for even) */
+    margin-right: 0;
+    margin-left: calc(max(10%, 40px));  /* Remove right margin for the last child in even examples */
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
