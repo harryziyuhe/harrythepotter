@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the world of Harry the Potter - gallery highlights, studio stories, and handcrafted ceramics that bring art into everyday rituals.">
     <title>Pottery Showcase - Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="header-content">
+<body class="home-page">
+    <header class="site-header">
+        <div class="header-content container">
             <div class="logo">
-                <img src="images/logo.png" alt="Your Logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo_clear.png" alt="Harry the Potter logo">
+                </a>
+                <span class="brand-name">Harry the Potter</span>
             </div>
-            <nav>
+            <nav class="primary-nav" aria-label="Main navigation">
                 <ul class="menu">
-                    <li><a href="index.html">Gallery</a></li>
+                    <li><a class="is-active" href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="story-vases.html">Story Vases</a></li>
                     <li><a href="about-me.html">About Me</a></li>
@@ -25,57 +30,94 @@
     </header>
 
     <main>
-        <section class="gallery">
-            <div class="gallery-item">
-                <img src="images/Santa Fe 1.jpg" alt="Santa Fe">
-                <div class="item-name">Santa Fe</div>
+        <section class="hero hero-home">
+            <div class="hero-layout container">
+                <div class="hero-content">
+                    <p class="eyebrow">Harry the Potter Studio</p>
+                    <h1>Wheel-thrown art that invites wonder into your everyday rituals.</h1>
+                    <p class="hero-description">Each form is guided by memory, place, and story. Explore a gallery of limited pieces, discover the narratives behind the glazes, and reserve the work that resonates with you.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="shop.html">Shop the latest</a>
+                        <a class="btn btn-ghost" href="story-vases.html">Read the stories</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img src="images/Mosquito Bay 1.jpg" alt="Wheel-thrown vessel with layered coastal glaze" loading="lazy">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/Sea Flower 3.jpg" alt="Sea Flower">
-                <div class="item-name">Sea Flower</div>
-            </div> 
-            <div class="gallery-item">
-                <img src="images/Shoal 3.jpg" alt="Shoal">
-                <div class="item-name">Shoal</div>
+        </section>
+
+        <section class="category-grid container" aria-label="Browse by form">
+            <article class="category-card" style="--category-image: url('images/Santa Fe 1.jpg');">
+                <div class="category-content">
+                    <p class="eyebrow">Vessels</p>
+                    <h3>Landscape echoes in porcelain</h3>
+                    <a class="link-arrow" href="shop.html">View collection</a>
+                </div>
+            </article>
+            <article class="category-card" style="--category-image: url('images/Sea Flower 3.jpg');">
+                <div class="category-content">
+                    <p class="eyebrow">Tableware</p>
+                    <h3>Gathering pieces for luminous tables</h3>
+                    <a class="link-arrow" href="shop.html">Set the table</a>
+                </div>
+            </article>
+            <article class="category-card" style="--category-image: url('images/Sylvia 2.jpg');">
+                <div class="category-content">
+                    <p class="eyebrow">Sculptural</p>
+                    <h3>Slow forms that hold space</h3>
+                    <a class="link-arrow" href="shop.html">Explore forms</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="featured-grid container" aria-label="Featured pieces">
+            <div class="section-intro">
+                <p class="eyebrow">From the current firing</p>
+                <h2>Gallery highlights</h2>
+                <p>Hover to see each piece up close, then visit the shop to reserve your favorite.</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/Untitled Rothko 3.jpg" alt="Untitled Rothko">
-                <div class="item-name">Untitled Rothko</div>
+            <div class="gallery-grid">
+                <figure class="gallery-tile">
+                    <img src="images/Shoal 3.jpg" alt="Shoal vessel in ocean blues" loading="lazy">
+                    <figcaption>Shoal</figcaption>
+                </figure>
+                <figure class="gallery-tile">
+                    <img src="images/Untitled Rothko 3.jpg" alt="Untitled Rothko vessel with color blocking" loading="lazy">
+                    <figcaption>Untitled Rothko</figcaption>
+                </figure>
+                <figure class="gallery-tile">
+                    <img src="images/Koi Pond 1.jpg" alt="Koi Pond bowl with fluid glaze" loading="lazy">
+                    <figcaption>Koi Pond</figcaption>
+                </figure>
+                <figure class="gallery-tile">
+                    <img src="images/Sequoia 1.jpg" alt="Sequoia vase with earthy gradient" loading="lazy">
+                    <figcaption>Sequoia</figcaption>
+                </figure>
             </div>
-            <div class="gallery-item">
-                <img src="images/Mosquito Bay 1.jpg" alt="Mosquito Bay">
-                <div class="item-name">Mosquito Bay</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Nagano 1.jpg" alt="Nagano">
-                <div class="item-name">Nagano</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Koi Pond 1.jpg" alt="Koi Pond">
-                <div class="item-name">Koi Pond</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Cauldron 1.jpg" alt="">
-                <div class="item-name">The Weyward Sisters</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sea Grape 1.jpg" alt="">
-                <div class="item-name">Sea Grape</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Cusco 2.jpg" alt="">
-                <div class="item-name">Cusco</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sequoia 1.jpg" alt="">
-                <div class="item-name">Sequoia</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sylvia 2.jpg" alt="">
-                <div class="item-name">Sylvia</div>
+        </section>
+
+        <section class="studio-note">
+            <div class="container studio-note-content">
+                <div>
+                    <p class="eyebrow">Inside the studio</p>
+                    <h2>An ongoing conversation with clay, glazes, and story.</h2>
+                </div>
+                <p>Every firing explores a new palette inspired by walks through coastal New England, family archives, and the unpredictable beauty of reduction kilns. Join the mailing list to be first in line for new releases and studio events.</p>
+                <a class="btn btn-secondary" href="about-me.html">Meet Harry</a>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Harry the Potter. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@harrythepotter.com">hello@harrythepotter.com</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>

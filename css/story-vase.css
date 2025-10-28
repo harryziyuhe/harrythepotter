@@ -48,6 +48,11 @@ nav .menu li a:hover {
     text-decoration: underline;
 }
 
+nav .menu li a.is-active {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 /* Story Description */
 .story-vases-title {
     text-align: center; /* Center the title horizontally */
@@ -137,4 +142,3 @@ main {
     max-width: 1000px; /* Adjust the value as needed */
     margin: 0 auto; /* Center the content horizontally */
 }
-

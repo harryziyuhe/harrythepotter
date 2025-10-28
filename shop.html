@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore handcrafted ceramics by Harry the Potter and reserve limited-edition vessels for your home.">
     <title>Pottery Showcase - Shop</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="header-content">
+<body class="shop-page">
+    <header class="site-header">
+        <div class="header-content container">
             <div class="logo">
-                <img src="images/logo.png" alt="Your Logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo_clear.png" alt="Harry the Potter logo">
+                </a>
+                <span class="brand-name">Harry the Potter</span>
             </div>
-            <nav>
+            <nav class="primary-nav" aria-label="Main navigation">
                 <ul class="menu">
-                    <li><a href="index.html">Gallery</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a class="is-active" href="shop.html">Shop</a></li>
                     <li><a href="story-vases.html">Story Vases</a></li>
                     <li><a href="about-me.html">About Me</a></li>
                 </ul>
@@ -25,41 +30,149 @@
     </header>
 
     <main>
-        <section class="gallery">
-            <div class="gallery-item">
-                <img src="images/Shoal 3.jpg" alt="Shoal">
-                <div class="item-name">Shoal</div>
+        <section class="hero hero-shop">
+            <div class="hero-content container">
+                <p class="eyebrow">New arrivals</p>
+                <h1>Handcrafted ceramics for modern, soulful spaces.</h1>
+                <p class="hero-description">Each vessel is wheel-thrown in small batches and finished with layered glazes that echo landscapes, memories, and quiet moments.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#collection">Shop the collection</a>
+                    <a class="btn btn-ghost" href="story-vases.html">Explore story vases</a>
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/Untitled Rothko 3.jpg" alt="Untitled Rothko">
-                <div class="item-name">Untitled Rothko</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Nagano 1.jpg" alt="Nagano">
-                <div class="item-name">Nagano</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Koi Pond 1.jpg" alt="Koi Pond">
-                <div class="item-name">Koi Pond</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sea Grape 1.jpg" alt="">
-                <div class="item-name">Sea Grape</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Cusco 2.jpg" alt="">
-                <div class="item-name">Cusco</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sequoia 1.jpg" alt="">
-                <div class="item-name">Sequoia</div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/Sylvia 2.jpg" alt="">
-                <div class="item-name">Sylvia</div>
+        </section>
+
+        <section class="selling-points container" aria-label="Shop highlights">
+            <article class="selling-point">
+                <h3>Small batch</h3>
+                <p>Limited runs keep every piece distinctive and heirloom-worthy.</p>
+            </article>
+            <article class="selling-point">
+                <h3>Sustainable</h3>
+                <p>Local clay bodies, non-toxic glazes, and recycled packaging.</p>
+            </article>
+            <article class="selling-point">
+                <h3>Artist made</h3>
+                <p>Designed, thrown, and glazed in-studio by Harry.</p>
+            </article>
+        </section>
+
+        <section class="filters container" aria-label="Filter collection">
+            <button class="filter-tag is-active" type="button">All</button>
+            <button class="filter-tag" type="button">Vases</button>
+            <button class="filter-tag" type="button">Bowls</button>
+            <button class="filter-tag" type="button">Sculptural</button>
+        </section>
+
+        <section id="collection" class="product-grid container" aria-label="Ceramics available for purchase">
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Shoal 3.jpg" alt="Shoal ceramic vessel with ocean-inspired glazes">
+                </div>
+                <div class="product-details">
+                    <h3>Shoal</h3>
+                    <p class="product-meta">Porcelain vessel &middot; 12&quot; tall</p>
+                    <p class="product-price">$240</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Untitled Rothko 3.jpg" alt="Untitled Rothko vessel with layered color blocking">
+                </div>
+                <div class="product-details">
+                    <h3>Untitled Rothko</h3>
+                    <p class="product-meta">Stoneware vessel &middot; 10&quot; tall</p>
+                    <p class="product-price">$180</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Nagano 1.jpg" alt="Nagano vase with snowy mountain glaze">
+                </div>
+                <div class="product-details">
+                    <h3>Nagano</h3>
+                    <p class="product-meta">Porcelain vase &middot; 9&quot; tall</p>
+                    <p class="product-price">$210</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Koi Pond 1.jpg" alt="Koi Pond bowl with fluid blue glaze">
+                </div>
+                <div class="product-details">
+                    <h3>Koi Pond</h3>
+                    <p class="product-meta">Stoneware bowl &middot; 14&quot; wide</p>
+                    <p class="product-price">$260</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Sea Grape 1.jpg" alt="Sea Grape vase in layered green glaze">
+                </div>
+                <div class="product-details">
+                    <h3>Sea Grape</h3>
+                    <p class="product-meta">Porcelain vase &middot; 11&quot; tall</p>
+                    <p class="product-price">$230</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Cusco 2.jpg" alt="Cusco vessel with warm terracotta tones">
+                </div>
+                <div class="product-details">
+                    <h3>Cusco</h3>
+                    <p class="product-meta">Stoneware vessel &middot; 8&quot; tall</p>
+                    <p class="product-price">$170</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Sequoia 1.jpg" alt="Sequoia vase with rich earthy gradient glaze">
+                </div>
+                <div class="product-details">
+                    <h3>Sequoia</h3>
+                    <p class="product-meta">Stoneware vase &middot; 13&quot; tall</p>
+                    <p class="product-price">$265</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Sylvia 2.jpg" alt="Sylvia sculptural vessel with soft lilac hues">
+                </div>
+                <div class="product-details">
+                    <h3>Sylvia</h3>
+                    <p class="product-meta">Sculptural vessel &middot; 15&quot; tall</p>
+                    <p class="product-price">$280</p>
+                    <button class="btn btn-secondary" type="button">Reserve</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="cta-band">
+            <div class="container">
+                <h2>Looking for a custom commission?</h2>
+                <p>Share the story you want to tell and we will collaborate on a one-of-a-kind piece for your home or gifting.</p>
+                <a class="btn btn-primary" href="about-me.html">Meet the artist</a>
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Harry the Potter. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@harrythepotter.com">hello@harrythepotter.com</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>

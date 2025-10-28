@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Harry the Potter, the artist behind the wheel-thrown ceramics and sculptural vessels showcased in the collection.">
     <title>Pottery Showcase - About Me</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="header-content">
+<body class="about-page">
+    <header class="site-header">
+        <div class="header-content container">
             <div class="logo">
-                <img src="images/logo.png" alt="Your Logo">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo_clear.png" alt="Harry the Potter logo">
+                </a>
+                <span class="brand-name">Harry the Potter</span>
             </div>
-            <nav>
+            <nav class="primary-nav" aria-label="Main navigation">
                 <ul class="menu">
-                    <li><a href="index.html">Gallery</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="story-vases.html">Story Vases</a></li>
-                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a class="is-active" href="about-me.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <h1>About Me</h1>
-        <p>Learn more about the artist behind these beautiful pottery pieces.</p>
-        <!-- Add about me content here -->
+        <section class="hero hero-about">
+            <div class="hero-content container">
+                <p class="eyebrow">Meet the artist</p>
+                <h1>Harry is a storyteller working in clay.</h1>
+                <p class="hero-description">From small-batch vessels to large sculptural commissions, every piece emerges from an intuitive dialogue with form, memory, and glaze.</p>
+            </div>
+        </section>
+
+        <section class="container about-content">
+            <p>More detailed narrative content about the artist can live here. Share the journey into ceramics, the inspirations behind each firing, and the studio rituals that shape the work.</p>
+            <p>Highlight milestones, exhibitions, or collaborations, and invite visitors to reach out for commissions, residencies, or studio visits.</p>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Harry the Potter. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@harrythepotter.com">hello@harrythepotter.com</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
