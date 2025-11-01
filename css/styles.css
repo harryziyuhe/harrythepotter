@@ -475,7 +475,94 @@ main {
     color: var(--color-muted);
     font-size: 1rem;
     line-height: 1.7;
-    max-width: 800px;
+    max-width: 680px;
+}
+
+.hero-story {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.story-vases-overview {
+    margin: 4rem auto 0;
+    display: grid;
+    gap: 2rem;
+    max-width: 720px;
+}
+
+.story-description {
+    display: grid;
+    gap: 1.5rem;
+    color: var(--color-muted);
+    line-height: 1.75;
+    font-size: 1.05rem;
+}
+
+.story-examples {
+    margin: 4.5rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.story-example-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.75rem;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+    padding: 2.25rem;
+    align-items: center;
+}
+
+.story-example-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: calc(var(--radius-base) - 8px);
+    box-shadow: 0 18px 38px rgba(22, 52, 86, 0.14);
+}
+
+.story-example-copy h2 {
+    margin: 0 0 0.85rem;
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    color: var(--color-primary-dark);
+}
+
+.story-example-copy p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.story-cta {
+    margin: 4rem auto 0;
+    max-width: 720px;
+}
+
+.story-cta .cta-card {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    padding: 2.75rem 3.25rem;
+    border-radius: var(--radius-base);
+    text-align: center;
+    color: #ffffff;
+    box-shadow: var(--shadow-hover);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.story-cta .cta-lead {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+}
+
+.story-cta .btn {
+    justify-self: center;
 }
 
 .product-grid {
@@ -708,5 +795,13 @@ main {
 
     .studio-note {
         padding: 3.5rem 0 4rem;
+    }
+
+    .story-example-card {
+        padding: 1.75rem;
+    }
+
+    .story-cta .cta-card {
+        padding: 2.25rem 2rem;
     }
 }
